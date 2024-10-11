@@ -1,0 +1,133 @@
+Q.1 What is the purpose of the 'printf()' function in C? Provide an example of its usage.
+ans-The 'printf()' function in C is used to print formatted output to the standard output (usually the console). It allows you to display text along with variable values, formatted in various ways.
+
+ Here's an example:
+#include <stdio.h>
+
+int main() {
+    int num = 10;
+    printf("The value of num is: %d\n", num);
+    return 0;
+}
+
+Q.2 Explain the significance of escape sequence characters in C. Give examples of two commonly
+used escape sequence characters.
+ans-Escape sequence characters in C are special characters that are preceded by a backslash '\' and have special meanings. 
+They are used to perform various tasks such as controlling cursor movement, inserting special characters, and formatting output. 
+Two commonly used escape sequence characters are '\n' for a newline and '\t' for a tab
+
+
+Q.3 Describe the role of the '\n' escape sequence character in C. How does it affect the output of a
+program?
+ans- The '\n' escape sequence character in C is used to insert a newline character into the output stream. When encountered in a string within a 'printf()'
+statement, it moves the cursor to the beginning of the next line. 
+
+For example:
+#include <stdio.h>
+
+int main() {
+    printf("Hello\nWorld!");
+    return 0;
+}
+
+Output:
+Hello
+World!
+
+Q.4 What is the function of the '\t' escape sequence character in C? Provide an example of its usage.
+ans-The '\t; escape sequence character in C is used to insert a horizontal tab into the output stream. It moves the cursor to the next tab stop. 
+
+Here's an example:
+#include <stdio.h>
+
+int main() {
+    printf("Name:\tJohn\nAge:\t25");
+    return 0;
+}
+
+Output:
+Name:   John
+Age:    25
+
+
+Q.5 How can you print a backslash character '\' using the 'printf()' function in C?
+ans-To print a backslash character '\' using the 'printf()' function in C, you need to escape it by using '\\'. 
+
+For example:
+#include <stdio.h>
+
+int main() {
+    printf("This is a backslash: \\");
+    return 0;
+}
+
+
+Q.6 Explain the concept of a basic C program. Provide a simple example of a C program with its
+components.
+ans-A basic C program typically consists of a few components:
+
+Preprocessor Directives: These are lines that start with #. They are instructions to the compiler to include certain header files or perform certain actions before compilation.
+Main Function: The 'main()[ function is the entry point of a C program where execution begins.
+Statements and Expressions: These are the actual instructions that the program will execute.
+Return Statement: The return statement is used to return a value from the 'main()' function.
+
+Example:
+#include <stdio.h>
+
+int main() {
+    printf("Hello, World!");
+    return 0;
+}
+
+
+
+
+Q.7 Discuss the importance of the 'main()' function in a C program. What is its significance?
+ans- The 'main()' function in a C program serves as the entry point for program execution. It's where the program begins its execution.
+ The 'main()' function must be present in every C program, and the program starts executing from the first statement inside the 'main()' function.
+
+
+
+
+Q.8 How do you include comments in a C program? Why are comments useful in programming?
+ans-Comments in a C program are used to provide explanations or annotations within the code. They are ignored by the compiler and are purely for human understanding. Comments can be added using '//' for single-line comments or'/* */' for multi-line comments. 
+They are useful for documenting code, explaining complex parts, or temporarily excluding code from execution.
+
+Example:
+#include <stdio.h>
+
+int main() {
+    // This is a single-line comment
+    printf("Hello, World!"); // This prints "Hello, World!"
+    /* 
+       This is a multi-line comment.
+       It spans multiple lines.
+    */
+    return 0;
+}
+
+
+
+
+Q.9 What is the purpose of the '#include <stdio.h>' and '#include <conio.h>' directives in a C program?
+Explain its significance.
+ans-The '/#include <stdio.h>' directive is used to include the standard input-output library in a C program. It provides functions like 'printf()' and 'scanf()' for input and output operations. 
+The '#include <conio.h>' directive is used for console input-output operations in older versions of C and is not a part of the standard C library.
+
+
+Q.10 Write a simple C program that demonstrates the use of 'printf()' to display “Hello, World!”
+followed by a new line.
+ans-Here's a simple C program that demonstrates the use of printf() to display "Hello, World!" followed by a new line:
+
+#include <stdio.h>
+
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}
+
+
+
+
+
+
